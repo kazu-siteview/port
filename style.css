@@ -181,23 +181,11 @@ html body main .introduction .common-container .common-subtitle i {
   font-size: 40px;
 }
 
-@media screen and (max-width: 600px) {
-  html body main .introduction .common-container .common-subtitle i {
-    font-size: 28px;
-  }
-}
-
 html body main .introduction .common-container .common-subtitle h2 {
   font-size: 40px;
   padding-left: 7px;
   font-family: 'Caveat', "cursive";
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  html body main .introduction .common-container .common-subtitle h2 {
-    font-size: 28px;
-  }
 }
 
 html body main .introduction .common-container .description-textbox {
@@ -217,18 +205,6 @@ html body main .introduction .common-container .description-textbox .first p:nth
   padding-top: 20px;
 }
 
-@media screen and (max-width: 1200px) {
-  html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
-    font-size: 1.6vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
-    font-size: 2.1vw;
-  }
-}
-
 html body main .introduction .common-container .description-textbox .description {
   text-align: center;
   color: #e6e6e6;
@@ -239,32 +215,13 @@ html body main .introduction .common-container .description-textbox .description
   line-height: 40px;
 }
 
-@media screen and (max-width: 1200px) {
-  html body main .introduction .common-container .description-textbox .description p {
-    font-size: 1.8vw;
-    line-height: 3vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html body main .introduction .common-container .description-textbox .description p {
-    font-size: 2.3vw;
-    line-height: 3.4vw;
-  }
-}
-
 html body main .introduction .common-container .description-textbox .description p span {
   color: red;
 }
 
 html body main .introduction .common-container .description-textbox .description p:nth-child(2) {
-  line-height: 1vw;
-}
-
-@media screen and (max-width: 1200px) {
-  html body main .introduction .common-container .description-textbox .description p:nth-child(2) {
-    line-height: 1.8vw;
-  }
+  padding-top: 50px;
+  line-height: 30px;
 }
 
 html body main .myskill {
