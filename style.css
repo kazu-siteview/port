@@ -3,7 +3,7 @@ html {
 }
 
 html body .main-background-image {
-  background-image: url("https://kazu-siteview.github.io/port/image/eyecatch-background-image.jpg");
+  background-image: url("https://kazu-siteview.github.io/port/image/main-background-image.jpg");
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
