@@ -201,8 +201,14 @@ html body main .introduction .common-container .description-textbox {
 }
 
 html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
-  font-size: 17px;
-  padding-top: 20px;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
+    font-size: 14px;
+  }
 }
 
 html body main .introduction .common-container .description-textbox .description {
@@ -212,7 +218,14 @@ html body main .introduction .common-container .description-textbox .description
 
 html body main .introduction .common-container .description-textbox .description p {
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .description-textbox .description p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 html body main .introduction .common-container .description-textbox .description p span {
@@ -220,8 +233,7 @@ html body main .introduction .common-container .description-textbox .description
 }
 
 html body main .introduction .common-container .description-textbox .description p:nth-child(2) {
-  padding-top: 50px;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 html body main .myskill {
