@@ -7,8 +7,7 @@
 }
 
 @mixin headline-font{
-    font-family: 'Caveat', "cursive";
-    text-transform: uppercase;
+    font-family: 'Kiwi Maru', serif;
 }
 
 @mixin paragraph-color{
@@ -185,28 +184,39 @@ body {
 
                     i {
                         font-size: 40px;
-                        // @include mq-down('md'){
-                        //     font-size: 28px;
-                        // }
+                        @include mq-down('md'){
+                            font-size: 30px;
+                        }
                     }
 
                     h2 {
                         font-size: 40px;
                         padding-left: 7px;
                         @include headline-font;
-                        // @include mq-down('md'){
-                        //     font-size: 28px;
-                        // }
+                        @include mq-down('md'){
+                            font-size: 30px;
+                        }
                     }
                 }
 
                 .description-textbox {
                     padding: 20px 5% 40px;
                     @include wrap-setting;
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    width: 80%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    width: 60%;
                     box-shadow: 0 0 5px rgb(223, 221, 221);
+                    @include mq-down('xl'){
+                        margin-left:5%;
+                        margin-right:5%;
+                        width: 80%;
+                    }
+                    @include mq-down('md'){
+                        margin-left:2%;
+                        margin-right:2%;
+                        width: 86%;
+                    }
+
                     .first{
                         p{
                             &:nth-child(2){
@@ -328,8 +338,8 @@ body {
 
                         .level-wrapper {
                             text-align: center;
-                            padding-top: 15px;
-                            padding-bottom: 25px;
+                            padding-top: 10px;
+                            padding-bottom: 35px;
 
                             p {
                                 @include paragraph-color;
@@ -368,28 +378,33 @@ body {
                 }
 
             .strength-container {
-                margin-left: 10%;
-                margin-right: 10%;
-                width: 80%;
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 90%;
                 @include wrap-setting;
-                @include mq-down('xl'){
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    width: 90%;
-                }
                 ul {
                     display: flex;
-                    width: 90%;
+                    width: 94%;
                     margin-left: auto;
                     margin-right: auto;
+                    @include mq-down('xl'){
+                        display: block;
+                        text-align: center;
+                    }
 
                     li {
-                        width: 80%;
+                        width: 84%;
                         padding-top: 30px;
                         padding-bottom: 30px;
+                        @include mq-down('xl'){
+                            margin: 0 auto;
+                        }
 
                         &:nth-child(n + 2) {
-                            margin-left: 5%;
+                            margin-left: 2%;
+                            @include mq-down('xl'){
+                                margin: 0 auto;
+                            }
                         }
 
                         .strength-subtitle {
@@ -411,32 +426,32 @@ body {
 
                             p {
                                 padding-left: 7px;
-                                font-size: 1.6vw;
+                                font-size: 25px;
                                 @include paragraph-color;
-                                @include mq-down('xl'){
-                                    font-size: 1.9vw;
+                                @include mq-down('md'){
+                                    font-size: 20px;
                                 }
                             }
 
                             i {
-                                font-size: 1.6vw;
+                                font-size: 25px;
                                 @include paragraph-color;
-                                @include mq-down('xl'){
-                                    font-size: 1.9vw;
+                                @include mq-down('md'){
+                                    font-size: 20px;
                                 }
                             }
                         }
 
                         .descripion-textbox {
-                            padding-top: 20px;
+                            padding-top: 12px;
 
                             p {
-                                font-size: 1.2vw;
-                                line-height: 2.7vw;
+                                font-size: 20px;
+                                line-height: 34px;
                                 @include paragraph-color;
-                                @include mq-down('xl'){
-                                    font-size: 1.5vw;
-                                    line-height: 3vw;
+                                @include mq-down('md'){
+                                    font-size: 14px;
+                                    line-height: 28px;
                                 }
                             }
                         }
@@ -626,33 +641,30 @@ body {
             .wrapper {
                 margin-left: 5%;
                 margin-right: 5%;
-                width: 87%;
                 @include mq-down('lg'){
-                    margin-left: 2.5%;
-                    margin-right: 2.5%;
-                    width: 95%;
+                    margin-left: 15%;
+                    margin-right: 15%;
                 }
                 @include mq-down('md'){
-                    margin-left: 7%;
-                    margin-right: 7%;
-                    width: 86%;
+                    margin-left: 5%;
+                    margin-right: 5%;
                 }
                 ul {
                     display: flex;
-                    @include mq-down('md'){
+                    @include mq-down('lg'){
                         display: block;
                     }
                     li {
                         width: 100%;
                         &:not(:last-child){
-                            @include mq-down('md'){
+                            @include mq-down('lg'){
                                 margin-bottom: 70px;
                             }
                         }
                         .service-image-container {
                             padding-bottom: 30px;
                             text-align: center;
-                            @include mq-down('md'){
+                            @include mq-down('lg'){
                                 padding-bottom: 20px;
                             }
                             img {
@@ -669,9 +681,6 @@ body {
                             padding-bottom: 25px;
                             font-size: 40px;
                             @include paragraph-color;
-                            @include mq-down('lg'){
-                                font-size: 28px;
-                            }
                             @include mq-down('md'){
                                 padding-bottom: 20px;
                             }
@@ -684,32 +693,21 @@ body {
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                            @include mq-down('xl'){
-                                height: 315px;
-                            }
                             @include mq-down('lg'){
-                                height: 300px;
-                            }
-                            @include mq-down('md'){
-                                height: 350px;
+                                height:auto;
                             }
                             .service-description {
                                 padding-bottom: 30px;
-                                font-size: 1.3vw;
-                                line-height:2vw;
-                                letter-spacing: 3px;
+                                font-size: 18px;
+                                line-height:30px;
+                                letter-spacing: 2px;
                                 @include paragraph-color;
                                 @include mq-down('xl'){
-                                    font-size: 1.5vw;
-                                    line-height: 2.3vw;
+                                    font-size: 16px;
+                                    line-height: 25px;
                                 }
                                 @include mq-down('lg'){
-                                    font-size: 10px;
-                                    line-height: 20px;
-                                }
-                                @include mq-down('md'){
-                                    font-size: 20px;
-                                    line-height: 30px;
+                                    padding-bottom: 50px;
                                 }
                             }
 
@@ -723,16 +721,8 @@ body {
                                     letter-spacing: 2px;
                                     @include paragraph-color;
                                     @include mq-down('xl'){
-                                        font-size: 1.4vw;
-                                        line-height: 1.8vw;
-                                    }
-                                    @include mq-down('lg'){
-                                        font-size: 8px;
-                                        line-height: 15px;
-                                    }
-                                    @include mq-down('md'){
-                                        font-size: 15px;
-                                        line-height: 20px;
+                                        font-size: 14px;
+                                        line-height: 22px;
                                     }
                                 }
                             }
@@ -772,7 +762,8 @@ body {
                 padding-bottom: 120px;
                 padding-left: 2%;
                 padding-right: 2%;
-            }            
+            }
+                      
                 i {
                     font-size: 60px;
                     @include mq-down('md'){
@@ -791,34 +782,51 @@ body {
 
                 .wrapper{
                     @include wrap-setting;
+                    @include mq-down('lg'){
+                        margin-left: 15%;
+                        margin-right: 15%;
+                    }
+                    @include mq-down('md'){
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
                     ul{
                         display: flex;
                         padding: 40px 20px;
                         @include mq-down('lg'){
-                            flex-wrap: wrap;
-                            justify-content: center;
+                            display: block;
                         }
                         li{
                             width: 25%;
                             @include mq-down('lg'){
-                                width: 180px;
-                                padding-bottom: 50px;
-                            }
+                                padding-left: 15%;
+                                padding-right: 15%;
+                                width: auto;                            }
+                            
                             .flow-image-container{
                                 text-align: center;
                                 padding-bottom:20px;
                                 img{
-                                    width: 25%;
+                                    width: 120px;
                                     border-radius: 50%;
+                                    @include mq-down('xl'){
+                                        width: 100px;
+                                    }
+                                    @include mq-down('lg'){
+                                        width: 120px;
+                                    }
                                 }
                             }
                             .flow-title{
                                 text-align: center;
-                                font-size: 1.5vw;
+                                font-size: 20px;
                                 padding-bottom: 30px;
                                 position: relative;
                                 @include mq-down('lg'){
                                     font-size: 16px;
+                                }
+                                @include mq-down('lg'){
+                                    font-size: 28px;
                                 }
                                 &::before {
                                     content: "";
@@ -832,20 +840,32 @@ body {
                                 }
                             }
                             .flow-description{
-                                font-size: 1vw;
+                                font-size: 18px;
                                 padding-top: 15px;
-                                line-height: 1.5vw;
+                                line-height: 30px;
                                 @include mq-down('lg'){
                                     font-size: 10px;
                                     line-height: 15px;
+                                }
+                                @include mq-down('lg'){
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    letter-spacing: 1.5px;
                                 }
                             }
                         }
                         .arrow-wrapper{
                             display: flex;
-                            align-items: center;                            
+                            align-items: center;
+                            padding: 0 15px;
+                            @include mq-down('lg'){
+                                display: block;
+                                text-align: center;
+                                padding: 45px 0px;
+                                transform: rotate(90deg);
+                            }                            
                             i{
-                                font-size: 3vw;
+                                font-size:45px;
                             }
                         }
                     }

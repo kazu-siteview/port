@@ -36,8 +36,7 @@ html body main .eyecatch {
   margin-bottom: 50px;
   padding-bottom: 80px;
   margin-bottom: 0;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
   color: #fffffe;
 }
 
@@ -140,8 +139,7 @@ html body main .introduction i {
 html body main .introduction h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -181,11 +179,22 @@ html body main .introduction .common-container .common-subtitle i {
   font-size: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .common-subtitle i {
+    font-size: 30px;
+  }
+}
+
 html body main .introduction .common-container .common-subtitle h2 {
   font-size: 40px;
   padding-left: 7px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .common-subtitle h2 {
+    font-size: 30px;
+  }
 }
 
 html body main .introduction .common-container .description-textbox {
@@ -194,10 +203,26 @@ html body main .introduction .common-container .description-textbox {
   -webkit-box-shadow: 0 0 5px #dfdddd;
           box-shadow: 0 0 5px #dfdddd;
   border-radius: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 80%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 60%;
   box-shadow: 0 0 5px #dfdddd;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .introduction .common-container .description-textbox {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .introduction .common-container .description-textbox {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 86%;
+  }
 }
 
 html body main .introduction .common-container .description-textbox .first p:nth-child(2) {
@@ -255,8 +280,7 @@ html body main .myskill i {
 html body main .myskill h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -361,8 +385,8 @@ html body main .myskill .skill-container ul li .image-wrapper img {
 
 html body main .myskill .skill-container ul li .level-wrapper {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 35px;
 }
 
 html body main .myskill .skill-container ul li .level-wrapper p {
@@ -401,8 +425,7 @@ html body main .strength i {
 html body main .strength h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -412,40 +435,51 @@ html body main .strength h1 {
 }
 
 html body main .strength .strength-container {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 5px #dfdddd;
           box-shadow: 0 0 5px #dfdddd;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 1200px) {
-  html body main .strength .strength-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-}
-
 html body main .strength .strength-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 94%;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul {
+    display: block;
+    text-align: center;
+  }
+}
+
 html body main .strength .strength-container ul li {
-  width: 80%;
+  width: 84%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul li {
+    margin: 0 auto;
+  }
+}
+
 html body main .strength .strength-container ul li:nth-child(n + 2) {
-  margin-left: 5%;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .strength .strength-container ul li:nth-child(n + 2) {
+    margin: 0 auto;
+  }
 }
 
 html body main .strength .strength-container ul li .strength-subtitle {
@@ -472,41 +506,41 @@ html body main .strength .strength-container ul li .strength-subtitle::before {
 
 html body main .strength .strength-container ul li .strength-subtitle p {
   padding-left: 7px;
-  font-size: 1.6vw;
+  font-size: 25px;
   color: #e6e6e6;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   html body main .strength .strength-container ul li .strength-subtitle p {
-    font-size: 1.9vw;
+    font-size: 20px;
   }
 }
 
 html body main .strength .strength-container ul li .strength-subtitle i {
-  font-size: 1.6vw;
+  font-size: 25px;
   color: #e6e6e6;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   html body main .strength .strength-container ul li .strength-subtitle i {
-    font-size: 1.9vw;
+    font-size: 20px;
   }
 }
 
 html body main .strength .strength-container ul li .descripion-textbox {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 html body main .strength .strength-container ul li .descripion-textbox p {
-  font-size: 1.2vw;
-  line-height: 2.7vw;
+  font-size: 20px;
+  line-height: 34px;
   color: #e6e6e6;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   html body main .strength .strength-container ul li .descripion-textbox p {
-    font-size: 1.5vw;
-    line-height: 3vw;
+    font-size: 14px;
+    line-height: 28px;
   }
 }
 
@@ -530,8 +564,7 @@ html body main .works i {
 html body main .works h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -749,8 +782,7 @@ html body main .service i {
 html body main .service h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -762,22 +794,19 @@ html body main .service h1 {
 html body main .service .wrapper {
   margin-left: 5%;
   margin-right: 5%;
-  width: 87%;
 }
 
 @media screen and (max-width: 900px) {
   html body main .service .wrapper {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
 @media screen and (max-width: 600px) {
   html body main .service .wrapper {
-    margin-left: 7%;
-    margin-right: 7%;
-    width: 86%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -787,7 +816,7 @@ html body main .service .wrapper ul {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   html body main .service .wrapper ul {
     display: block;
   }
@@ -797,7 +826,7 @@ html body main .service .wrapper ul li {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   html body main .service .wrapper ul li:not(:last-child) {
     margin-bottom: 70px;
   }
@@ -808,7 +837,7 @@ html body main .service .wrapper ul li .service-image-container {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   html body main .service .wrapper ul li .service-image-container {
     padding-bottom: 20px;
   }
@@ -830,12 +859,6 @@ html body main .service .wrapper ul li .service-title {
   padding-bottom: 25px;
   font-size: 40px;
   color: #e6e6e6;
-}
-
-@media screen and (max-width: 900px) {
-  html body main .service .wrapper ul li .service-title {
-    font-size: 28px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -863,50 +886,30 @@ html body main .service .wrapper ul li .service-container {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-  html body main .service .wrapper ul li .service-container {
-    height: 315px;
-  }
-}
-
 @media screen and (max-width: 900px) {
   html body main .service .wrapper ul li .service-container {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html body main .service .wrapper ul li .service-container {
-    height: 350px;
+    height: auto;
   }
 }
 
 html body main .service .wrapper ul li .service-container .service-description {
   padding-bottom: 30px;
-  font-size: 1.3vw;
-  line-height: 2vw;
-  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2px;
   color: #e6e6e6;
 }
 
 @media screen and (max-width: 1200px) {
   html body main .service .wrapper ul li .service-container .service-description {
-    font-size: 1.5vw;
-    line-height: 2.3vw;
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 
 @media screen and (max-width: 900px) {
   html body main .service .wrapper ul li .service-container .service-description {
-    font-size: 10px;
-    line-height: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html body main .service .wrapper ul li .service-container .service-description {
-    font-size: 20px;
-    line-height: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -925,24 +928,8 @@ html body main .service .wrapper ul li .service-container .price-container .pric
 @media screen and (max-width: 1200px) {
   html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
   html body main .service .wrapper ul li .service-container .price-container .price {
-    font-size: 1.4vw;
-    line-height: 1.8vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
-  html body main .service .wrapper ul li .service-container .price-container .price {
-    font-size: 8px;
-    line-height: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html body main .service .wrapper ul li .service-container .price-container .price-rough-standard,
-  html body main .service .wrapper ul li .service-container .price-container .price {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -993,8 +980,7 @@ html body main .flow i {
 html body main .flow h1 {
   font-size: 60px;
   padding-left: 10px;
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -1010,6 +996,20 @@ html body main .flow .wrapper {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body main .flow .wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 html body main .flow .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,11 +1019,7 @@ html body main .flow .wrapper ul {
 
 @media screen and (max-width: 900px) {
   html body main .flow .wrapper ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
   }
 }
 
@@ -1033,8 +1029,9 @@ html body main .flow .wrapper ul li {
 
 @media screen and (max-width: 900px) {
   html body main .flow .wrapper ul li {
-    width: 180px;
-    padding-bottom: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: auto;
   }
 }
 
@@ -1044,13 +1041,25 @@ html body main .flow .wrapper ul li .flow-image-container {
 }
 
 html body main .flow .wrapper ul li .flow-image-container img {
-  width: 25%;
+  width: 120px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  html body main .flow .wrapper ul li .flow-image-container img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li .flow-image-container img {
+    width: 120px;
+  }
 }
 
 html body main .flow .wrapper ul li .flow-title {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 20px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -1058,6 +1067,12 @@ html body main .flow .wrapper ul li .flow-title {
 @media screen and (max-width: 900px) {
   html body main .flow .wrapper ul li .flow-title {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li .flow-title {
+    font-size: 28px;
   }
 }
 
@@ -1073,15 +1088,23 @@ html body main .flow .wrapper ul li .flow-title::before {
 }
 
 html body main .flow .wrapper ul li .flow-description {
-  font-size: 1vw;
+  font-size: 18px;
   padding-top: 15px;
-  line-height: 1.5vw;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 900px) {
   html body main .flow .wrapper ul li .flow-description {
     font-size: 10px;
     line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul li .flow-description {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -1092,10 +1115,21 @@ html body main .flow .wrapper ul .arrow-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 900px) {
+  html body main .flow .wrapper ul .arrow-wrapper {
+    display: block;
+    text-align: center;
+    padding: 45px 0px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 
 html body main .flow .wrapper ul .arrow-wrapper i {
-  font-size: 3vw;
+  font-size: 45px;
 }
 
 html body footer {
@@ -1192,8 +1226,7 @@ html body footer .section-wrapper ul li a p {
 }
 
 html body footer .section-wrapper ul li a p:nth-child(n + 2) {
-  font-family: 'Caveat', "cursive";
-  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
 }
 
 @media screen and (max-width: 900px) {
