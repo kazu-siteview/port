@@ -109,7 +109,8 @@ body {
                 font-size: 100px;
                 text-align: left;
                 @include mq-down('xl') {
-                    background-image: url("https://kazu-siteview.github.io/port/image/eyecatch-background-image-phone.jpg");
+                    // background-image: url("https://kazu-siteview.github.io/port/image/eyecatch-background-image-phone.jpg");
+                    background-image: url("https://kazu-siteview.github.io/port/image/test.jpg");
                     height: 800px;
                 }
                 @include mq-down('md'){

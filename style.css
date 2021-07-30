@@ -60,7 +60,7 @@ html body main .eyecatch .top-background-image {
 
 @media screen and (max-width: 1200px) {
   html body main .eyecatch .top-background-image {
-    background-image: url("https://kazu-siteview.github.io/port/image/eyecatch-background-image-phone.jpg");
+    background-image: url("https://kazu-siteview.github.io/port/image/test.jpg");
     height: 800px;
   }
 }
